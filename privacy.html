@@ -1,68 +1,128 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Copin プライバシーポリシー</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copin プライバシーポリシー / Privacy Policy</title>
 <style>
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
     line-height: 1.7;
     margin: 40px auto;
-    max-width: 720px;
+    max-width: 760px;
     padding: 0 20px;
     color: #333;
   }
-  h1 {
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
+  h1 { font-size: 1.9rem; margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; font-size: 1.3rem; border-left: 4px solid #6c8; padding-left: 8px; }
+  .lang-switch {
+    margin-bottom: 30px;
   }
-  h2 {
-    margin-top: 2rem;
-    font-size: 1.3rem;
-    border-left: 4px solid #6c8;
-    padding-left: 8px;
+  .lang-switch button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    border: 1px solid #bbb;
+    background: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: #6c8;
+    color: #fff;
+    border-color: #6c8;
   }
 </style>
+<script>
+  function switchLang(lang) {
+    document.getElementById("ja").style.display = lang === "ja" ? "block" : "none";
+    document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+    document.getElementById("btn-ja").classList.toggle("active", lang === "ja");
+    document.getElementById("btn-en").classList.toggle("active", lang === "en");
+  }
+</script>
 </head>
 <body>
 
-<h1>Copin – Copipe Card プライバシーポリシー</h1>
+<div class="lang-switch">
+  <button id="btn-ja" class="active" onclick="switchLang('ja')">日本語</button>
+  <button id="btn-en" onclick="switchLang('en')">English</button>
+</div>
+
+<!-- ▼ 日本語版 -->
+<div id="ja">
+<h1>Copin プライバシーポリシー</h1>
 <p>最終更新日：2026年2月</p>
 
-<p>本アプリ「Copin – Copipe Card」は Takemiya Eri（以下「開発者」）が提供するアプリケーションです。ユーザーのプライバシーを尊重し、以下の通りプライバシーポリシーを定めます。</p>
+<p>本アプリ「Copin」は Takemiya Eri（以下「開発者」）が提供するアプリケーションです。ユーザーのプライバシーを尊重し、以下の通りプライバシーポリシーを定めます。</p>
 
-<h2>1. 収集する情報について</h2>
-<p>Copin は以下の情報のみ扱います：</p>
+<h2>1. 収集する情報</h2>
 <ul>
-  <li>ユーザーが自らコピー・入力したテキスト（端末内にのみ保存）</li>
-  <li>Apple が提供する匿名の診断データ（ユーザーが Apple に送信を許可した場合のみ）</li>
+  <li>ユーザーが自らコピー・入力したテキスト（端末内のみ保存）</li>
+  <li>Apple が提供する匿名の診断データ（ユーザーが許可した場合のみ）</li>
 </ul>
-<p>開発者は個人情報（氏名、住所、連絡先等）を収集しません。</p>
+<p>開発者は氏名、住所、連絡先などの個人情報を収集しません。</p>
 
 <h2>2. データの保存方法</h2>
-<p>アプリ内のデータはすべてユーザーの端末内にのみ保存され、外部サーバへ送信されることはありません。開発者がユーザーデータへアクセスすることもありません。</p>
+<p>すべてのデータはユーザーの端末内にのみ保存され、外部サーバへ送信されません。</p>
 
-<h2>3. 第三者への提供</h2>
-<p>Copin は次の行為を行いません：</p>
+<h2>3. 第三者提供</h2>
+<p>Copin は以下の行為を行いません：</p>
 <ul>
   <li>データの外部送信</li>
-  <li>広告ネットワーク等の第三者企業へのデータ提供</li>
-  <li>外部分析・追跡のためのSDK利用</li>
+  <li>広告ネットワーク等への情報提供</li>
+  <li>追跡目的のSDK利用</li>
 </ul>
 
-<h2>4. アプリ内課金について</h2>
-<p>課金処理は Apple の StoreKit によって管理され、クレジットカード情報などの決済データが開発者に提供されることはありません。</p>
+<h2>4. アプリ内課金</h2>
+<p>課金処理は Apple の StoreKit により管理され、クレジットカード情報などを開発者が取得することはありません。</p>
 
 <h2>5. ユーザーの権利</h2>
 <p>ユーザーはいつでもアプリ内のデータを削除できます。また、アプリをアンインストールすることで端末内のデータは完全に削除されます。</p>
 
 <h2>6. プライバシーポリシーの変更</h2>
-<p>必要に応じて本ポリシーを更新する場合があります。重要な変更がある場合はアプリ内またはストアページにて告知します。</p>
+<p>本ポリシーは必要に応じて更新されます。重要な変更がある場合はアプリ内またはストアページで告知します。</p>
 
 <h2>7. お問い合わせ</h2>
-<p>ご質問等がある場合は以下へご連絡ください：</p>
 <p>メール：takepenco&#64;gmail&#46;com</p>
+</div>
+
+<!-- ▼ 英語版 -->
+<div id="en" style="display:none;">
+<h1>Copin Privacy Policy</h1>
+<p>Last Updated: February 2026</p>
+
+<p>The application “Copin” is provided by Takemiya Eri (“the Developer”). We respect user privacy and outline our policy as follows.</p>
+
+<h2>1. Information We Collect</h2>
+<ul>
+  <li>Text copied or entered by the user (stored locally on the device only)</li>
+  <li>Anonymous diagnostic data provided by Apple (only if the user opts in)</li>
+</ul>
+<p>The Developer does not collect personal information such as name, address, or contact details.</p>
+
+<h2>2. Data Storage</h2>
+<p>All data is stored solely on the user's device and is never transmitted to external servers.</p>
+
+<h2>3. Third-Party Sharing</h2>
+<p>Copin does NOT:</p>
+<ul>
+  <li>Send data externally</li>
+  <li>Share information with advertising networks</li>
+  <li>Use tracking or analytics SDKs</li>
+</ul>
+
+<h2>4. In-App Purchases</h2>
+<p>All payments are handled securely by Apple’s StoreKit. The Developer does not receive any billing information.</p>
+
+<h2>5. User Rights</h2>
+<p>Users may delete their data at any time within the app. Uninstalling the app will remove all data stored on the device.</p>
+
+<h2>6. Policy Changes</h2>
+<p>This policy may be updated as necessary. Significant changes will be announced within the app or on the store page.</p>
+
+<h2>7. Contact</h2>
+<p>Email: takepenco&#64;gmail&#46;com</p>
+</div>
 
 </body>
 </html>
